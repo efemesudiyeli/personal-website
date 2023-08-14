@@ -49,13 +49,30 @@ export default function Navbar() {
               viewBox="0 0 256 256"
               className="h-6 w-6"
             >
-              <rect width="256" height="256" fill=""></rect>
+              <circle
+                cx="128"
+                cy="128"
+                r="128"
+                className="fill-secondary stroke-primary"
+                strokeWidth="10"
+              ></circle>
+              <circle
+                cx="110"
+                cy="160"
+                r="92"
+                className="fill-primary stroke-secondary"
+              ></circle>
+              {/* <rect
+                width="256"
+                height="256"
+                className="fill-transparent"
+              ></rect>
               <line
                 x1="128"
                 y1="0"
                 x2="256"
                 y2="384"
-                fill="none"
+                className="fill-primary"
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -66,12 +83,12 @@ export default function Navbar() {
                 y1="0"
                 x2="0"
                 y2="384"
-                fill="none"
+                className="fill-primary"
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="16"
-              ></line>
+              ></line> */}
             </svg>
 
             <span className="hidden font-bold sm:inline-block">awoken</span>
