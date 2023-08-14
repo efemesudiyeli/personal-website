@@ -24,7 +24,7 @@ export default function Hero() {
         </h1>
         <p className="text-xl leading-7">
           This is my personal website. You might want to stick around for a
-          while. Here's a button if you want to reach me directly!
+          while. Here&apos;s a button if you want to reach me directly!
           <br /> <br />
           <span className="inline-block text-primary/60">
             My resume and social media account is above on the page.
@@ -64,7 +64,7 @@ export default function Hero() {
                     <TooltipTrigger>
                       Whatsapp
                       <TooltipContent>
-                        <p>Don't call me before we talk please.</p>
+                        <p>Don&apos;t call me before we talk please.</p>
                       </TooltipContent>
                     </TooltipTrigger>
                   </Tooltip>
