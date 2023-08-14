@@ -13,7 +13,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import Image from "next/image";
 import CodeSVG from "./CodeSVG";
 
 export default function Hero() {
@@ -26,9 +25,13 @@ export default function Hero() {
         <p className="text-xl leading-7">
           This is my personal website. You might want to stick around for a
           while. Here's a button if you want to reach me directly!
+          <br /> <br />
+          <span className="inline-block text-primary/60">
+            My resume and social media account is above on the page.
+          </span>
         </p>
         <DropdownMenu>
-          <DropdownMenuTrigger className="max-md:w-full bg-primary text-secondary px-5 py-2 rounded-md font-bold mt-3">
+          <DropdownMenuTrigger className="max-md:w-full w-1/3 bg-primary text-secondary px-5 py-2 rounded-md font-bold mt-3">
             Contact
           </DropdownMenuTrigger>
           <DropdownMenuContent>

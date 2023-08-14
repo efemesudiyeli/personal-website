@@ -11,12 +11,21 @@ import {
   NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import Link from "next/link";
 import { useState } from "react";
 
 // Beautify
-import { GithubIcon, LinkedinIcon } from "../node_modules/lucide-react";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  FileBadge,
+} from "../node_modules/lucide-react";
 import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
@@ -30,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="mb-10 border-b sticky top-0 z-50 bg-background/60">
+    <header className=" mb-10 border-b sticky top-0 z-50 bg-background/60">
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           {/* PC Logo */}
@@ -40,12 +49,12 @@ export default function Navbar() {
               viewBox="0 0 256 256"
               className="h-6 w-6"
             >
-              <rect width="256" height="256" fill="none"></rect>
+              <rect width="256" height="256" fill=""></rect>
               <line
-                x1="208"
-                y1="128"
-                x2="128"
-                y2="208"
+                x1="128"
+                y1="0"
+                x2="256"
+                y2="384"
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -53,10 +62,10 @@ export default function Navbar() {
                 strokeWidth="16"
               ></line>
               <line
-                x1="192"
-                y1="40"
-                x2="40"
-                y2="192"
+                x1="128"
+                y1="0"
+                x2="0"
+                y2="384"
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
@@ -64,6 +73,7 @@ export default function Navbar() {
                 strokeWidth="16"
               ></line>
             </svg>
+
             <span className="hidden font-bold sm:inline-block">awoken</span>
           </a>
           {/* PC Nav */}
@@ -97,7 +107,7 @@ export default function Navbar() {
                           <NavigationMenuLink
                             className={`${navigationMenuTriggerStyle()} !justify-start !w-full`}
                           >
-                            Projects&nbsp; &amp; &nbsp;Source&nbsp;Codes
+                            Projects&nbsp;&amp;&nbsp;Source&nbsp;Codes
                           </NavigationMenuLink>
                         </Link>
                       </li>
@@ -165,10 +175,8 @@ export default function Navbar() {
         </button>
 
         {/* Mobile logo title */}
-        <Link href="/" className="ms-2 flex items-center space-x-2">
-          <span className="font-bold hidden max-md:inline-block">
-            efemesudiyeli
-          </span>
+        <Link href="/" className=" ms-2 md:hidden flex items-center space-x-2">
+          <span className="font-bold">efemesudiyeli</span>
         </Link>
 
         {/* Links & Darkmode */}
@@ -188,6 +196,23 @@ export default function Navbar() {
             >
               <LinkedinIcon size={20} />
             </a>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <a
+                    href="/public/assets/resume.pdf"
+                    download
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FileBadge size={20} />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Download my resume (CV)</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
 
             <ModeToggle />
           </nav>
