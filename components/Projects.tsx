@@ -13,16 +13,8 @@ import styles from "./styles/swiper.module.css";
 // import required modules
 import { Navigation } from "swiper/modules";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BellRing, SearchCode } from "../node_modules/lucide-react";
+import { SearchCode } from "../node_modules/lucide-react";
 import Link from "next/link";
 
 export default function Projects() {

@@ -2,6 +2,14 @@ import HeroOnly from "@/components/HeroOnly";
 import Projects from "@/components/Projects";
 import SkillProgress from "@/components/SkillProgress";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Me - efemesudiyeli.dev ",
+  description:
+    "Efe Mesudiyeli kişisel portfolyo websitesi yeteneklerim hakkımda ve projelerim.",
+};
+
 export default function Whoami() {
   return (
     <div className="container flex flex-col gap-y-6 my-auto">
