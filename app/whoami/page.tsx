@@ -12,13 +12,13 @@ export const metadata: Metadata = {
 
 export default function Whoami() {
   return (
-    <div className="container flex flex-col gap-y-6 my-auto">
+    <div className="container flex flex-col gap-y-10 my-auto">
       <HeroOnly />
 
-      <div id="skills">
+      <div id="skills" className="">
         <h2 className="text-3xl font-extrabold">MY SKILLS</h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-x-20">
           <SkillProgress skillName="Javascript & Typescript" value={80} />
           <SkillProgress skillName="React & NextJS" value={70} />
           <SkillProgress skillName="MongoDB" value={60} />

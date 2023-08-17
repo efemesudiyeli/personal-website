@@ -20,6 +20,16 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 
+// Sidebar
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 // Beautify
 import {
   GithubIcon,
@@ -29,21 +39,21 @@ import {
 import { ModeToggle } from "./ModeToggle";
 
 export default function Navbar() {
-  const [sideBarToggle, setsideBarToggle] = useState<string>("closed");
+  const [sideBarToggle, setSideBarToggle] = useState<boolean>(false);
   const handleSidebar = () => {
-    if (sideBarToggle === "closed") {
-      setsideBarToggle("open");
+    if (sideBarToggle === false) {
+      setSideBarToggle(true);
     } else {
-      setsideBarToggle("closed");
+      setSideBarToggle(false);
     }
   };
 
   return (
-    <header className=" mb-10 border-b sticky top-0 z-50 bg-background/60 ">
+    <header className=" mb-10 border-b sticky top-0 z-40 bg-background/60 ">
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           {/* PC Logo */}
-          <a href="/" className="mr-6 flex items-center space-x-2">
+          <Link href="/" className="mr-6 flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 256 256"
@@ -65,7 +75,7 @@ export default function Navbar() {
             </svg>
 
             <span className="hidden font-bold sm:inline-block">awoken</span>
-          </a>
+          </Link>
           {/* PC Nav */}
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <NavigationMenu>
@@ -73,14 +83,14 @@ export default function Navbar() {
                 <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink
-                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-2`}
+                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-1`}
                     >
                       Homepage
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="before:content-['//'] gap-2">
+                  <NavigationMenuTrigger className="before:content-['//'] gap-1">
                     About Me
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -104,7 +114,7 @@ export default function Navbar() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="/docs" legacyBehavior passHref>
+                        <Link href="/whoami#projects" legacyBehavior passHref>
                           <NavigationMenuLink
                             className={`${navigationMenuTriggerStyle()} !justify-start !w-full`}
                           >
@@ -114,25 +124,6 @@ export default function Navbar() {
                       </li>
                     </ul>
                   </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-2`}
-                    >
-                      Documentation
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-2`}
-                    >
-                      Documentation
-                    </NavigationMenuLink>
-                  </Link>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -173,7 +164,7 @@ export default function Navbar() {
         </Link>
 
         {/* Links & Darkmode */}
-        <div className="flex flex-1 items-center justify-end space-x-2 ">
+        <div className="flex flex-1 items-center justify-end">
           <nav className="flex items-center space-x-2">
             <a
               href="https://github.com/efemesudiyeli"
@@ -207,22 +198,24 @@ export default function Navbar() {
               </Tooltip>
             </TooltipProvider>
 
-            <ModeToggle />
+            <div className="ps-3">
+              <ModeToggle />
+            </div>
           </nav>
         </div>
       </div>
 
       {/* Backdrop Effect */}
-      <div
+      {/* <div
         data-state={sideBarToggle}
         className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm data-[state=closed]:hidden"
         style={{ pointerEvents: "auto" }}
         data-aria-hidden="true"
         aria-hidden="true"
-      ></div>
+      ></div> */}
 
       {/* Sidebar */}
-      <aside
+      {/* <aside
         role="dialog"
         data-state={sideBarToggle}
         className="fixed z-50 gap-4 bg-background p-6 shadow-lg  ease-in-out inset-y-0 left-0 h-full w-3/4 border-r sm:max-w-sm pr-0 data-[state=closed]:hidden"
@@ -355,7 +348,29 @@ export default function Navbar() {
           </svg>
           <span className="sr-only">Close</span>
         </button>
-      </aside>
+      </aside> */}
+
+      <Sheet open={sideBarToggle} onOpenChange={setSideBarToggle}>
+        <SheetContent className="z-50" side={"left"}>
+          <SheetHeader>
+            <SheetTitle className="mb-5">efemesudiyeli.dev</SheetTitle>
+            <SheetDescription className="grid grid-cols-1 gap-2 text-md text-primary">
+              <Link onClick={handleSidebar} href={"/"}>
+                Homepage
+              </Link>
+              <Link onClick={handleSidebar} href={"/whoami"}>
+                Who am i?
+              </Link>
+              <Link onClick={handleSidebar} href={"/whoami#skills"}>
+                Skills
+              </Link>
+              <Link onClick={handleSidebar} href={"/whoami#projects"}>
+                Projects&nbsp;&amp;&nbsp;Source Codes
+              </Link>
+            </SheetDescription>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
     </header>
   );
 }
