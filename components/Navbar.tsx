@@ -39,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className=" mb-10 border-b sticky top-0 z-50 bg-background/60">
+    <header className=" mb-10 border-b sticky top-0 z-50 bg-background/60 ">
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           {/* PC Logo */}
@@ -62,33 +62,6 @@ export default function Navbar() {
                 r="92"
                 className="fill-primary stroke-secondary"
               ></circle>
-              {/* <rect
-                width="256"
-                height="256"
-                className="fill-transparent"
-              ></rect>
-              <line
-                x1="128"
-                y1="0"
-                x2="256"
-                y2="384"
-                className="fill-primary"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              ></line>
-              <line
-                x1="128"
-                y1="0"
-                x2="0"
-                y2="384"
-                className="fill-primary"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="16"
-              ></line> */}
             </svg>
 
             <span className="hidden font-bold sm:inline-block">awoken</span>
@@ -98,20 +71,31 @@ export default function Navbar() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger>About Me</NavigationMenuTrigger>
+                  <Link href="/" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-2`}
+                    >
+                      Homepage
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="before:content-['//'] gap-2">
+                    About Me
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul>
                       <li>
-                        <Link href="/docs" legacyBehavior passHref>
+                        <Link href="/whoami" legacyBehavior passHref>
                           <NavigationMenuLink
-                            className={`${navigationMenuTriggerStyle()} !justify-start !w-full`}
+                            className={`${navigationMenuTriggerStyle()}  space-x-5 !justify-start !w-full`}
                           >
                             Who am i?
                           </NavigationMenuLink>
                         </Link>
                       </li>
                       <li>
-                        <Link href="/docs" legacyBehavior passHref>
+                        <Link href="/whoami/#skills" legacyBehavior passHref>
                           <NavigationMenuLink
                             className={`${navigationMenuTriggerStyle()} !justify-start !w-full`}
                           >
@@ -131,10 +115,11 @@ export default function Navbar() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+
                 <NavigationMenuItem>
                   <Link href="/docs" legacyBehavior passHref>
                     <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
+                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-2`}
                     >
                       Documentation
                     </NavigationMenuLink>
@@ -143,16 +128,7 @@ export default function Navbar() {
                 <NavigationMenuItem>
                   <Link href="/docs" legacyBehavior passHref>
                     <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Documentation
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
+                      className={`${navigationMenuTriggerStyle()} before:content-['//'] gap-2`}
                     >
                       Documentation
                     </NavigationMenuLink>

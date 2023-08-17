@@ -8,12 +8,14 @@ import {
 export default function MyArea() {
   return (
     <div className="my-10">
-      <h2 className="text-3xl font-extrabold font-sans">My Area</h2>
+      <h2 className="text-3xl font-extrabold font-sans mb-2">
+        MY AREAS OF EXPERTISE
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="bg-gradient-to-tl dark:from-black dark:to-gray-500/10 from-black/20 to-white rounded-lg shadow-2xl p-5">
           <div className="flex items-center gap-x-4 mb-2">
             <Layout />
-            <h3 className="font-bold font-sans text-3xl text-orange-500">
+            <h3 className="font-bold font-sans text-3xl text-[#fb233b]">
               Web Development
             </h3>
           </div>
