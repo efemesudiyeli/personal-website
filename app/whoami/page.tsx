@@ -18,7 +18,7 @@ export default function Whoami() {
       <div id="skills" className="">
         <h2 className="text-3xl font-extrabold">MY SKILLS</h2>
 
-        <div className="grid grid-cols-2 gap-x-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-20">
           <SkillProgress skillName="Javascript & Typescript" value={80} />
           <SkillProgress skillName="React & NextJS" value={70} />
           <SkillProgress skillName="MongoDB" value={60} />
