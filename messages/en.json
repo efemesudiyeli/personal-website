@@ -1,0 +1,55 @@
+{
+  "Navigation": {
+    "homepage": "Homepage",
+    "aboutMe": {
+      "title": "About Me",
+      "whoAmI": "Who am I?",
+      "skills": "Skills",
+      "projects": "Projects & Source Codes"
+    }
+  },
+  "Hero": {
+    "title": "WELCOME TO MY PERSONAL WEBSITE!",
+    "subtitle": "This is my personal website. You might want to stick around for a while. Here's a button if you want to reach me directly!",
+    "heroNote": "My resume and social media account is above on the page.",
+    "contactButton": {
+      "contactButtonHeader": "Contact",
+      "contactVia": "Contact via?",
+      "contactEmail": "E-mail"
+    }
+  },
+  "myAreas": {
+    "header": "MY AREAS OF EXPERTISE",
+    "webDevelopment": {
+      "header": "Web Development",
+      "description": "We use the design we have to create a customized website or web application. If you have already benefited from our design service, we offer you a customized digital experience based on this design."
+    },
+    "webDesign": {
+      "header": "Web Design",
+      "description": "Don't have a design in hand? Don't worry, we are here for you to review our design service. We create a design specific to your needs and work with you at every stage of the project. We take steps together for a customized digital experience."
+    },
+    "UIUX": {
+      "header": "UI/UX",
+      "description": "Have you noticed some user experience issues with the design you have? Don't worry, we are happy to help you with this. Working together, we can resolve these issues. Our goal is to work together to provide the best experience for your users."
+    },
+    "SEO": {
+      "header": "Search Engine Optimization",
+      "description": "Is your site not showing up in search engines as much as you would like? Don't worry, we're here to help you rank higher. Let's move your site up a few places together."
+    }
+  },
+  "whoAmI": {
+    "mainContent": {
+      "title": "Exploring the Digital Frontier: My Journey in the World of Software",
+      "description": "Greetings! I'm Efe, a passionate web developer who brings ideas to life using the power of NextJS, React, and Tailwind. At 21, Freelancing allows me to blend these passions into innovative digital solutions. My journey into the world of development was a natural fusion of curiosity and creativity. I thrive on challenges, transforming lines of code into seamless user experiences. From dynamic web applications to responsive designs, I revel in crafting interfaces that leave a lasting impact. Outside the realm of coding, you'll find me creating tunes and exploring new melodies. Music fuels my creative spirit and complements my coding odyssey perfectly.",
+      "note": "Thank you for dropping by my digital realm! Whether you're a fellow developer, someone eager to collaborate, I invite you to join me on this journey. Feel free to connect, share your thoughts, or embark on new ventures together."
+    },
+    "mySkillsTitle": "MY SKILLS",
+    "projectsTitle": "MY PROJECTS & SOURCE CODES",
+    "inspectButton": "Inspect"
+  },
+  "contactButton": {
+    "contactButtonHeader": "Contact",
+    "contactVia": "Contact via?",
+    "contactEmail": "E-mail"
+  }
+}

@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { SearchCode } from "../node_modules/lucide-react";
 import Link from "next/link";
 
-export default function Projects() {
+export default function Projects({ inspectButtonTranslate }: any) {
   return (
     <>
       <Swiper
@@ -54,7 +54,7 @@ export default function Projects() {
             <div className="w-full mt-4">
               <Link href={"/"}>
                 <Button className="w-full flex gap-2">
-                  <SearchCode size={16} /> Inspect
+                  <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>
             </div>
@@ -80,7 +80,7 @@ export default function Projects() {
                 href={"https://github.com/efemesudiyeli/nextjs-blog"}
               >
                 <Button className="w-full flex gap-2">
-                  <SearchCode size={16} /> Inspect
+                  <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>
             </div>
@@ -107,7 +107,7 @@ export default function Projects() {
                 href={"https://github.com/efemesudiyeli/nodejsmovieclient"}
               >
                 <Button className="w-full flex gap-2">
-                  <SearchCode size={16} /> Inspect
+                  <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>
             </div>
@@ -128,7 +128,7 @@ export default function Projects() {
             <div className="w-full mt-4">
               <Link href={"#"} className="pointer-events-none">
                 <Button disabled className="w-full flex gap-2">
-                  <SearchCode size={16} /> Inspect
+                  <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>
             </div>
@@ -149,7 +149,7 @@ export default function Projects() {
             <div className="w-full mt-4">
               <Link href={"#"} className="pointer-events-none">
                 <Button disabled className="w-full flex gap-2">
-                  <SearchCode size={16} /> Inspect
+                  <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>
             </div>
@@ -171,7 +171,7 @@ export default function Projects() {
             <div className="w-full mt-4 ">
               <Link href={"#"} className="pointer-events-none">
                 <Button disabled className="w-full flex gap-2">
-                  <SearchCode size={16} /> Inspect
+                  <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>
             </div>

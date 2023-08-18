@@ -14,28 +14,27 @@ import {
 } from "@/components/ui/tooltip";
 
 import CodeSVG from "./CodeSVG";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("Hero");
+  const c = useTranslations("contactButton");
+
   return (
     <div className="flex justify-between items-center max-md:flex-wrap max-md:relative ">
       <div className="border-l ps-6 font-sans max-md:order-2 max-md:z-10 max-md:backdrop-blur-sm dark:max-md:backdrop-brightness-50">
-        <h1 className="text-5xl mb-4 font-bold">
-          WELCOME TO MY PERSONAL WEBSITE!
-        </h1>
+        <h1 className="text-5xl mb-4 font-bold">{t("title")}</h1>
         <p className="text-xl leading-7">
-          This is my personal website. You might want to stick around for a
-          while. Here&apos;s a button if you want to reach me directly!
+          {t("subtitle")}
           <br /> <br />
-          <span className="inline-block text-primary/60">
-            My resume and social media account is above on the page.
-          </span>
+          <span className="inline-block text-primary/60">{t("heroNote")}</span>
         </p>
         <DropdownMenu>
           <DropdownMenuTrigger className="max-md:w-full w-1/3 bg-primary text-secondary px-5 py-2 rounded-md font-bold mt-3">
-            Contact
+            {c("contactButtonHeader")}
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>Contact via?</DropdownMenuLabel>
+            <DropdownMenuLabel>{c("contactVia")}</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <a
               href={"https://www.instagram.com/awokendev/"}
@@ -49,7 +48,7 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
             >
-              <DropdownMenuItem>Email</DropdownMenuItem>
+              <DropdownMenuItem>{c("contactEmail")}</DropdownMenuItem>
             </a>
             <a
               href={
