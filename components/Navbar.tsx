@@ -212,7 +212,7 @@ export default function Navbar({ props }: any) {
                   {props.locale.locale == "en" ? (
                     <span className="fi fi-tr" />
                   ) : (
-                    <span className="fi fi-en" />
+                    <span className="fi fi-gb" />
                   )}
                 </Link>
               </div>
