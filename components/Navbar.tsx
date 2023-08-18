@@ -207,7 +207,7 @@ export default function Navbar({ props }: any) {
               <div className="flex hover:bg-white/10 p-2 rounded-md ">
                 <Link
                   href={pathname}
-                  locale={props.locale.locale === "en" ? "en" : "tr"}
+                  locale={props.locale.locale === "en" ? "tr" : "en"}
                 >
                   {props.locale.locale == "en" ? (
                     <span className="fi fi-tr" />
