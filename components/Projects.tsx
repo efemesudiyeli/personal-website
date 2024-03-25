@@ -96,7 +96,7 @@ export default function Projects({ inspectButtonTranslate }: any) {
             </div>
 
             <div className="text-primary/60 text-sm font-light h-12 overflow-clip">
-              This game was made for Brackeys Game Jam 2024.1 by 1 artist, 1 programmer and 1 composer people in 1 week. Theme: What's behind the door?
+              This game was made for Brackeys Game Jam 2024.1 by 1 artist, 1 programmer and 1 composer people in 1 week. Theme: What&apos;s behind the door?
             </div>
 
             <div className="w-full mt-4">
