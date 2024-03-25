@@ -65,19 +65,19 @@ export default function Projects({ inspectButtonTranslate }: any) {
           <div className="flex flex-col justify-between items-center  h-44  py-5 px-7 border rounded-lg">
             <div>
               <h3 className="text-primary font-extrabold text-2xl">
-                Blog Project
+                Prehistoric Anomaly
               </h3>
             </div>
 
             <div className="text-primary/60 text-sm font-light h-12 overflow-clip">
-              An experimental blog project that built by NextJS
+              This game was developed in a 14-day development process. It is a prehistoric aberration-themed game for Acerola Jam 0.
             </div>
 
             <div className="w-full mt-4">
               <Link
                 target="_blank"
                 rel="noreferrer"
-                href={"https://github.com/efemesudiyeli/nextjs-blog"}
+                href={"https://github.com/efemesudiyeli/Prehistoric-Anomaly"}
               >
                 <Button className="w-full flex gap-2">
                   <SearchCode size={16} /> {inspectButtonTranslate}
@@ -91,20 +91,19 @@ export default function Projects({ inspectButtonTranslate }: any) {
           <div className="flex flex-col justify-between items-center h-44  py-5 px-7 border rounded-lg">
             <div>
               <h3 className="text-primary font-extrabold text-2xl">
-                Movie App
+                Traces of Death
               </h3>
             </div>
 
             <div className="text-primary/60 text-sm font-light h-12 overflow-clip">
-              In this project you can create, delete, update movies. App can
-              pick movie to watch for you.
+              This game was made for Brackeys Game Jam 2024.1 by 1 artist, 1 programmer and 1 composer people in 1 week. Theme: What's behind the door?
             </div>
 
             <div className="w-full mt-4">
               <Link
                 target="_blank"
                 rel="noreferrer"
-                href={"https://github.com/efemesudiyeli/nodejsmovieclient"}
+                href={"https://github.com/efemesudiyeli/Traces-of-Death"}
               >
                 <Button className="w-full flex gap-2">
                   <SearchCode size={16} /> {inspectButtonTranslate}

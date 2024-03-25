@@ -22,10 +22,10 @@ export default function Whoami() {
         <h2 className="text-3xl font-extrabold">{t("mySkillsTitle")}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-20">
-          <SkillProgress skillName="Javascript & Typescript" value={80} />
-          <SkillProgress skillName="React & NextJS" value={70} />
-          <SkillProgress skillName="MongoDB" value={60} />
-          <SkillProgress skillName="NodeJS & ExpressJS" value={50} />
+          <SkillProgress skillName="C#" value={90} />
+          <SkillProgress skillName="Unity" value={80} />
+          <SkillProgress skillName="Aseprite" value={70} />
+          <SkillProgress skillName="Blender" value={50} />
         </div>
       </div>
 
