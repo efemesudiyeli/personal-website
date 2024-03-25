@@ -16,27 +16,27 @@
   "myAreas": {
     "header": "UZMANLIK ALANLARIM",
     "webDevelopment": {
-      "header": "Web Geliştirme",
-      "description": "Elimizdeki tasarımı, özelleştirilmiş bir web sitesi veya web uygulaması oluşturmak için kullanıyoruz. Eğer daha önce tasarım hizmetimizden yararlandıysanız, bu tasarımı temel alarak size özel bir dijital deneyim sunuyoruz."
+      "header": "Oyun Geliştirme",
+      "description": "Oyun geliştirme alanında tutkulu ve deneyimliyim. Çeşitli oyun motorları ve programlama dilleri kullanarak eğlenceli oyunlar geliştirme konusunda deneyimliyim. Grafik tasarımından oyun mekaniğine kadar her aşamada kaliteli ve kullanıcı odaklı çözümler sunmayı hedefliyorum."
     },
     "webDesign": {
-      "header": "Web Tasarım",
-      "description": "Elinizde bir tasarım yok mu? Endişelenmeyin, tasarım hizmetimizi gözden geçirmeniz için buradayız. İhtiyaçlarınıza özel bir tasarım oluşturuyor ve projenin her aşamasında sizinle birlikte çalışıyoruz. Kişiye özel bir dijital deneyim için adımları birlikte atıyoruz."
+      "header": "Yazılım Geliştirme",
+      "description": "Yazılım geliştirme konusunda deneyimliyim. Web uygulamaları, mobil uygulamalar ve masaüstü yazılımlar gibi çeşitli platformlarda çalışmalar yaptım. Yenilikçi çözümler üretme, verimliliği artırma ve kullanıcı deneyimini geliştirme konularında bilgi sahibiyim."
     },
     "UIUX": {
-      "header": "UI/UX",
-      "description": "Sahip olduğunuz tasarımla ilgili bazı kullanıcı deneyimi sorunları mı fark ettiniz?Endişelenmeyin, bu konuda size yardımcı olmaktan mutluluk duyarız.Birlikte çalışarak bu sorunları çözebiliriz.Amacımız, kullanıcılarınız için en iyi deneyimi sağlamak üzere birlikte çalışmaktır."
+      "header": "Oyun Tasarımı",
+      "description": "Oyun tasarımı ve mekaniği konusunda tutkulu olduğum kadar bilgiliyim. Kullanıcı deneyimini öne çıkaran, bağımlılık yapıcı oyun mekaniği ve dengeli oyun tasarımı konularında deneyimliyim."
     },
     "SEO": {
-      "header": "Arama Motoru Optimizasyonu",
-      "description": "Siteniz arama motorlarında istediğiniz kadar görünmüyor mu?Endişelenmeyin, daha üst sıralarda yer almanıza yardımcı olmak için buradayız.Gelin sitenizi birlikte birkaç basamak yukarı taşıyalım."
+      "header": "Optimizasyon",
+      "description": "Oyun programlama alanında geniş bir tecrübeye sahibim ve oyun performansını maksimize etmek için optimize etme konusunda bilgiliyim. Bellek yönetimi ve grafik optimizasyonu gibi alanlarda bilgi sahibiyim. Oyunların sorunsuz bir şekilde çalışmasını sağlamak için gelişmiş teknikler ve en iyi uygulamaları kullanıyorum."
     }
   },
   "whoAmI": {
     "mainContent": {
-      "title": "Dijital Sınırı Keşfetmek: Yazılım Dünyasındaki Yolculuğum",
-      "description": "Selamlar! Ben Efe, NextJS, React ve Tailwind'in gücünü kullanarak fikirleri hayata geçiren tutkulu bir web geliştiricisiyim. 21 yaşındayım ve serbest çalışmak bu tutkularımı yenilikçi dijital çözümlerle harmanlamamı sağlıyor. Geliştirme dünyasına olan yolculuğum, merak ve yaratıcılığın doğal bir birleşimiydi. Kod satırlarını kusursuz kullanıcı deneyimlerine dönüştürerek zorlukların üstesinden geliyorum. Dinamik web uygulamalarından duyarlı tasarımlara kadar, kalıcı bir etki bırakan arayüzler oluşturmaktan keyif alıyorum. Kodlama alanının dışında, beni melodiler yaratırken ve yeni melodiler keşfederken bulabilirsiniz. Müzik yaratıcı ruhumu besliyor ve kodlama serüvenimi mükemmel bir şekilde tamamlıyor.",
-      "note": "Dijital alemime uğradığınız için teşekkür ederim! İster bir geliştirici olun, ister işbirliği yapmaya hevesli biri, sizi bu yolculukta bana katılmaya davet ediyorum. Bağlantı kurmaktan, düşüncelerinizi paylaşmaktan veya birlikte yeni girişimlere atılmaktan çekinmeyin."
+      "title": "Efe Mesudiyeli",
+      "description": "Selamlar! Ben Efe, Başta Unity olmak üzere çeşitli oyun motorları kullanabilen, resmi Unity Junior Programmer sertifikalı, genç bir oyun geliştiricisiyim. Uzun süre front-end web geliştirme alanında ilerledikten sonra gerçek isteğim olan oyun geliştirmeye yöneldim ve kendimi bu alanda geliştirdim. Ayrıca bir YouTube kanalım da var! Bu kanalda yeni geliştiricilere bildiklerimi öğretiyor ve bir topluluk oluşturuyorum.",
+      "note": "Uğradığınız için teşekkür ederim! İster bir geliştirici olun, ister birlikte çalışmak isteyen biri, bağlantı kurmaktan çekinmeyin."
     },
     "mySkillsTitle": "YETENEKLERİM",
     "projectsTitle": "PROJELERİM & KAYNAK KODLAR",
