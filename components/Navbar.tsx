@@ -40,7 +40,7 @@ import { ModeToggle } from "./ModeToggle";
 
 import Link from "next-intl/link";
 import { usePathname } from "next-intl/client";
-import myResume from "../public/assets/resume.pdf";
+
 
 export default function Navbar({ props }: any) {
   const [sideBarToggle, setSideBarToggle] = useState<boolean>(false);
@@ -188,14 +188,15 @@ export default function Navbar({ props }: any) {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger>
-                  <a
-                    href={myResume}
+                  <Link
+                    href={'public/assets/resume.pdf'}
                     download
+                    locale={false}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <FileBadge size={20} />
-                  </a>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Download my resume (CV)</p>
@@ -243,6 +244,6 @@ export default function Navbar({ props }: any) {
           </SheetHeader>
         </SheetContent>
       </Sheet>
-    </header>
+    </header >
   );
 }
