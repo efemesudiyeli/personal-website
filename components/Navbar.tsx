@@ -191,7 +191,6 @@ export default function Navbar({ props }: any) {
                   <Link
                     href={'/assets/resume.pdf'}
                     download
-                    locale="false"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
