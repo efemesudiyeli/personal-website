@@ -78,7 +78,7 @@ export default function Navbar({ props }: any) {
               ></circle>
             </svg>
 
-            <span className="hidden font-bold sm:inline-block">awoken</span>
+            <span className="hidden font-bold sm:inline-block">awokendev</span>
           </Link>
           {/* PC Nav */}
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -188,7 +188,7 @@ export default function Navbar({ props }: any) {
               <Tooltip>
                 <TooltipTrigger>
                   <a
-                    href="/public/assets/resume.pdf"
+                    href="./public/assets/resume.pdf"
                     download
                     target="_blank"
                     rel="noreferrer"
