@@ -40,6 +40,7 @@ import { ModeToggle } from "./ModeToggle";
 
 import Link from "next-intl/link";
 import { usePathname } from "next-intl/client";
+import myResume from "../public/assets/resume.pdf";
 
 export default function Navbar({ props }: any) {
   const [sideBarToggle, setSideBarToggle] = useState<boolean>(false);
@@ -188,7 +189,7 @@ export default function Navbar({ props }: any) {
               <Tooltip>
                 <TooltipTrigger>
                   <a
-                    href="./public/assets/resume.pdf"
+                    href={myResume}
                     download
                     target="_blank"
                     rel="noreferrer"
