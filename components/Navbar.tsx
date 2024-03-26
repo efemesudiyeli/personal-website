@@ -189,7 +189,7 @@ export default function Navbar({ props }: any) {
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                    href={'public/assets/resume.pdf'}
+                    href={'/assets/resume.pdf'}
                     download
                     locale="false"
                     target="_blank"
