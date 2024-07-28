@@ -39,6 +39,8 @@ export default function RootLayout({
               homepage: t("homepage"),
               aboutMeHeader: t("aboutMe.title"),
               whoAmI: t("aboutMe.whoAmI"),
+              apps: t("apps.title"),
+              spyquestHeader: t("apps.spyquest.title"),
               skills: t("aboutMe.skills"),
               projects: t("aboutMe.projects"),
               locale: { locale },

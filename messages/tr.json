@@ -6,6 +6,12 @@
       "whoAmI": "Ben Kimim?",
       "skills": "Yeteneklerim",
       "projects": "Projeler & Kaynak Kodlar"
+    },
+    "apps": {
+      "title": "Uygulamalarım",
+      "spyquest": {
+        "title": "Spyquest - Casusu Bul"
+      }
     }
   },
   "Hero": {

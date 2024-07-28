@@ -6,6 +6,12 @@
       "whoAmI": "Who am I?",
       "skills": "Skills",
       "projects": "Projects & Source Codes"
+    },
+    "apps": {
+      "title": "My Apps",
+      "spyquest": {
+        "title": "Spyquest - Find the Spy!"
+      }
     }
   },
   "Hero": {

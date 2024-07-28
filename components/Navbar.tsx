@@ -130,6 +130,25 @@ export default function Navbar({ props }: any) {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="before:content-['//'] gap-1">
+                    {props.apps}
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="w-max">
+                      <li>
+                        <Link href="/apps/spyquest" legacyBehavior passHref>
+                          <NavigationMenuLink
+                            className={`${navigationMenuTriggerStyle()}  space-x-5 !justify-start !w-full`}
+                          >
+                            {props.spyquestHeader}
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </nav>
