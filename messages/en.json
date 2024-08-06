@@ -27,30 +27,30 @@
   "myAreas": {
     "header": "MY AREAS OF EXPERTISE",
     "webDevelopment": {
-      "header": "Game Development",
-      "description": "I am passionate and experienced in game development. I have experience in developing entertaining games using various game engines and programming languages. My aim is to provide quality and user-centered solutions at every stage, from graphic design to game mechanics."
+      "header": "iOS Development",
+      "description": "I have experience in developing robust and high-performance iOS applications using Swift and SwiftUI. I focus on creating user-friendly interfaces and seamless experiences that align with Apple’s design principles."
     },
     "webDesign": {
-      "header": "Software Development",
-      "description": "I am experienced in software development. I have worked on various platforms such as web applications, mobile applications, and desktop software. I am knowledgeable in generating innovative solutions, enhancing efficiency, and improving user experience."
+      "header": "UI/UX Design for iOS",
+      "description": "I am experienced in designing intuitive and engaging user interfaces for iOS apps. I create visually appealing and user-centered designs that enhance usability and user satisfaction."
     },
     "UIUX": {
-      "header": "Game Design",
-      "description": "I am as knowledgeable about game design and mechanics as I am passionate. I have experience in creating addictive game mechanics that prioritize user experience and balanced game design."
+      "header": "iOS App Architecture",
+      "description": "I am proficient in designing scalable and maintainable app architectures using MVC, MVVM, and other design patterns. I implement best practices for efficient and clean code management."
     },
     "SEO": {
-      "header": "Game Optimization",
-      "description": "I have extensive experience in game programming and am knowledgeable about optimizing game performance. I am proficient in areas such as memory management and graphic optimization. I use advanced techniques and best practices to ensure games run smoothly."
+      "header": "Integration and Backend Services for iOS",
+      "description": "I am skilled in integrating iOS applications with backend services and APIs. I have experience using Core Data, Firebase, and RESTful APIs to ensure smooth data management and synchronization."
     }
   },
   "whoAmI": {
     "mainContent": {
       "title": "Efe Mesudiyeli",
-      "description": "I'm Efe, a young game developer certified as a Unity Junior Programmer, proficient in various game engines including Unity. After progressing in front-end web development for a long time, I shifted my focus to game development, which has been my true passion, and I have developed myself in this field. Additionally, I also have a YouTube channel where I teach what I know to new developers and build a community.",
+      "description": "My name is Efe, and I am an experienced iOS developer specializing in creating high-quality, user-centered applications. I have experience with Swift and SwiftUI, designing robust and user-friendly iOS apps that align with Apple’s design principles. With a background in UI/UX design, I enhance user satisfaction by creating engaging interfaces. I am also experienced in designing scalable and maintainable app architectures using MVVM and other design patterns. Additionally, I have experience integrating iOS apps with backend services using Core Data, Firebase, and RESTful APIs. Outside of coding, I enjoy exploring new technologies, gaming, and spending time with loved ones. I am dedicated to developing innovative and impactful applications that improve users’ daily lives.",
       "note": "Thank you for stopping by! Whether you're a fellow developer or someone interested in collaborating, feel free to reach out. I'm open to connecting with you. Best regards,"
     },
     "mySkillsTitle": "MY SKILLS",
-    "projectsTitle": "MY PROJECTS & SOURCE CODES",
+    "projectsTitle": "MY APPS & SOURCE CODES",
     "inspectButton": "Inspect"
   },
   "contactButton": {

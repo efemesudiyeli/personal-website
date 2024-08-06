@@ -65,19 +65,18 @@ export default function Projects({ inspectButtonTranslate }: any) {
           <div className="flex flex-col justify-between items-center  h-44  py-5 px-7 border rounded-lg">
             <div>
               <h3 className="text-primary font-extrabold text-2xl">
-                Prehistoric Anomaly
+                Spyquest - Find the Spy
               </h3>
             </div>
 
             <div className="text-primary/60 text-sm font-light h-12 overflow-clip">
-              This game was developed in a 14-day development process. It is a prehistoric aberration-themed game for Acerola Jam 0.
-            </div>
+              Dive into the exciting world of Spyquest, the ultimate social party game app.</div>
 
             <div className="w-full mt-4">
               <Link
                 target="_blank"
                 rel="noreferrer"
-                href={"https://github.com/efemesudiyeli/Prehistoric-Anomaly"}
+                href={"https://apps.apple.com/tr/app/spyquest-find-the-spy/id6572294458"}
               >
                 <Button className="w-full flex gap-2">
                   <SearchCode size={16} /> {inspectButtonTranslate}
@@ -87,7 +86,7 @@ export default function Projects({ inspectButtonTranslate }: any) {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className={`${styles.swiperSlide}  text-secondary`}>
+        {/* <SwiperSlide className={`${styles.swiperSlide}  text-secondary`}>
           <div className="flex flex-col justify-between items-center h-44  py-5 px-7 border rounded-lg">
             <div>
               <h3 className="text-primary font-extrabold text-2xl">
@@ -111,11 +110,10 @@ export default function Projects({ inspectButtonTranslate }: any) {
               </Link>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide
-          className={`${styles.swiperSlide}  text-secondary opacity-50`}
-        >
-          <div className="flex flex-col justify-between items-center h-44  py-5 px-7 border rounded-lg">
+          className={`${styles.swiperSlide}  text-secondary opacity-50`} >
+          <div className="flex flex-col justify-between items-center h-44 py-5 px-7 border rounded-lg">
             <div>
               <h3 className="text-primary font-extrabold text-2xl">
                 Coming soon.
