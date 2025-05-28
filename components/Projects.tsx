@@ -112,19 +112,20 @@ export default function Projects({ inspectButtonTranslate }: any) {
           </div>
         </SwiperSlide> */}
         <SwiperSlide
-          className={`${styles.swiperSlide}  text-secondary opacity-50`} >
+          className={`${styles.swiperSlide}  text-secondary`} >
           <div className="flex flex-col justify-between items-center h-44 py-5 px-7 border rounded-lg">
             <div>
               <h3 className="text-primary font-extrabold text-2xl">
-                Coming soon.
+                WakePoint
               </h3>
             </div>
 
-            <div className="text-primary/60 text-sm font-light h-12 overflow-clip"></div>
+            <div className="text-primary/60 text-sm font-light h-12 overflow-clip">Wake up at your destination! WakePoint uses your location to ensure you never miss your stop.</div>
 
             <div className="w-full mt-4">
-              <Link href={"#"} className="pointer-events-none">
-                <Button disabled className="w-full flex gap-2">
+              <Link target="_blank"
+                rel="noreferrer" href={"https://github.com/efemesudiyeli/WakePoint"} className="">
+                <Button className="w-full flex gap-2">
                   <SearchCode size={16} /> {inspectButtonTranslate}
                 </Button>
               </Link>

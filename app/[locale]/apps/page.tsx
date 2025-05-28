@@ -45,21 +45,21 @@ export default function Home() {
             <div className=" flex flex-col justify-between items-center h-44 py-5 px-7 border rounded-lg">
                 <div>
                     <h3 className="text-primary font-extrabold text-2xl">
-                        Coming Soon
+                        WakePoint
                     </h3>
                 </div>
 
                 <div className="text-primary/60 text-sm font-light h-12 overflow-clip">
-                    ...                </div>
+                    Wake up at your destination! WakePoint uses your location to ensure you never miss your stop.                </div>
 
                 <div className="w-full mt-4">
                     <Link
 
                         target="_blank"
                         rel="noreferrer"
-                        href={"/apps/spyquest"}
+                        href={"/apps/wakepoint"}
                     >
-                        <Button className="w-full flex gap-2" disabled>
+                        <Button className="w-full flex gap-2">
                             <SearchCode size={16} /> {t("inspectButton")}
                         </Button>
                     </Link>
