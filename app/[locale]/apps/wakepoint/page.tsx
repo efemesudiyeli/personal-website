@@ -28,7 +28,7 @@ export default function Home() {
                 </li>
                 <li>For night travelers: Wake up safely even in the dark.
                 </li>
-                <li>For those who don't want to constantly check their stop: You don't always have to keep your eyes on the road.
+                <li>For those who don&apos;t want to constantly check their stop: You don&apos;t always have to keep your eyes on the road.
                 </li>
             </ul>
 
