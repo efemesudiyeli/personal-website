@@ -1,0 +1,229 @@
+[
+  {
+    "_type": "privacyPolicy",
+    "title": "SpyQuest Privacy Policy",
+    "slug": {
+      "current": "spyquest-privacy"
+    },
+    "appName": "SpyQuest",
+    "appStoreUrl": "https://apps.apple.com/app/spyquest/id123456789",
+    "lastUpdated": "2024-01-15",
+    "contactEmail": "efemesudiyeli@icloud.com",
+    "sections": [
+      {
+        "title": "1. Information We Collect",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "Personal Information • We do not collect any personal information (such as name, email address, etc.) from you while you use our app."
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "Usage Information • We may collect anonymous information about how the app is used. This includes data on in-app interactions and the frequency of feature usage."
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "Device Information • We may collect information about the device you use to access our app. This includes device type, operating system, unique device identifiers, and network information."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2. Use of Information",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "The information we collect may be used for the following purposes:"
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "• To improve the performance and user experience of the app."
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "• To identify and fix issues."
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "• To develop and enhance app features."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3. Sharing of Information",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "We do not share your personal information with third parties. However, we may share anonymous information in the following situations:"
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "• To comply with legal requirements."
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "• With our service providers to help maintain and improve the app."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4. Ads",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "We use Google Mobile Ads SDK to display ads in our app. Google may use anonymous information to serve ads that are relevant to users' interests. For more information about Google's privacy policy, please visit "
+              },
+              {
+                "_type": "span",
+                "marks": ["link"],
+                "text": "here",
+                "href": "https://policies.google.com/privacy"
+              },
+              {
+                "_type": "span",
+                "text": "."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5. Data Security",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "We take all necessary technical and administrative measures to protect your information. However, we cannot guarantee complete security of data transmitted over the internet."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "6. Children's Privacy",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "Our app is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have inadvertently received personal information from a child under 13, we will delete such information from our records."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "7. Changes",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "This privacy policy may be updated from time to time. Any changes will be posted on this page. We recommend that you review this policy periodically to stay informed about how we are protecting your information."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "8. Contact",
+        "content": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "children": [
+              {
+                "_type": "span",
+                "text": "If you have any questions about this privacy policy, please contact us at "
+              },
+              {
+                "_type": "span",
+                "marks": ["link"],
+                "text": "efemesudiyeli@icloud.com",
+                "href": "mailto:efemesudiyeli@icloud.com"
+              },
+              {
+                "_type": "span",
+                "text": ". This privacy policy is a general example and may need to be customized based on the specific features and data collection practices of your app. It is also recommended to consult with a legal professional before implementing this policy."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "metaTitle": "SpyQuest Privacy Policy - efemesudiyeli",
+      "metaDescription": "SpyQuest app privacy policy. Learn how we collect, use, and protect your information."
+    }
+  }
+]
