@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     default: "Efe Mesudiyeli - iOS Developer Portfolio",
     template: "%s | Efe Mesudiyeli - iOS Developer"
   },
+  icons: {
+    icon: '/favicon-new.ico',
+    shortcut: '/favicon-new.ico',
+    apple: '/apple-touch-icon.png',
+  },
   description: "iOS Developer Efe Mesudiyeli'nin portfolyo sitesi. Swift, SwiftUI ve UIKit ile geliştirilmiş mobil uygulamalar, projeler ve blog yazıları.",
   keywords: [
     "iOS Developer",
