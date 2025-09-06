@@ -120,7 +120,7 @@ export default async function BlogPage() {
 
                         {/* Cover Image */}
                         {post.coverImage && (
-                          <div className="flex-shrink-0 w-46 h-28 my-auto">
+                          <div className="flex-shrink-0 w-20 h-16 sm:w-32 sm:h-20 md:w-40 md:h-24 lg:w-46 lg:h-28 my-auto">
                             <div className="relative w-full h-full rounded-lg overflow-hidden">
                               <Image
                                 src={urlFor(post.coverImage).width(200).height(150).url()}

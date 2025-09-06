@@ -111,7 +111,7 @@ export default function Hero({ profile }: HeroProps) {
               )}
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 space-y-4 sm:space-y-0 sm:space-x-6 mb-4">
+            <div className="flex flex-row items-center justify-center lg:justify-start gap-4 mb-4">
           
               {/* Social Links */}
               {profile.socialLinks && (
