@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from "next/script";
+
 
 const helveticaNeue = localFont({
   src: [
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
   description: "iOS Developer Efe Mesudiyeli'nin portfolyo sitesi. Swift, SwiftUI ve UIKit ile geliştirilmiş mobil uygulamalar, projeler ve blog yazıları.",
   keywords: [
     "iOS Developer",
-    "Swift", 
+    "Swift",
     "SwiftUI",
     "UIKit",
     "Mobile Development",
@@ -104,13 +106,15 @@ export const metadata: Metadata = {
   classification: "Portfolio Website",
   other: {
     "mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-capable": "yes", 
+    "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
     "apple-mobile-web-app-title": "Efe Mesudiyeli",
     "theme-color": "#3B82F6",
     "msapplication-TileColor": "#3B82F6",
   },
 };
+
+
 
 export default function RootLayout({
   children,
@@ -119,6 +123,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
+      <head>
+         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW4203M8E"></Script>
+<Script>{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);} 
+  gtag('js', new Date());
+  gtag('config', 'G-QVW4203M8E');
+`}</Script>
+      </head>
       <body
         className={`${helveticaNeue.variable} antialiased`}
       >
