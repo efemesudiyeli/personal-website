@@ -26,6 +26,7 @@ export async function getPosts(): Promise<Post[]> {
     title,
     slug,
     excerpt,
+    content,
     coverImage,
     publishedAt,
     tags,

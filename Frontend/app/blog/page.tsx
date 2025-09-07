@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Clock } from 'lucide-react'
 import { getPosts } from '../lib/sanity'
 import { urlFor } from '../lib/sanity'
+import { calculateReadingTime } from '../lib/reading-time'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import type { Metadata } from 'next'
@@ -115,7 +116,7 @@ export default async function BlogPage() {
                           <div className="flex items-center text-sm text-gray-500">
                             <span className="flex items-center justify-center gap-2">
                               <Clock size={12} className="flex-shrink-0" />
-                              <span className="leading-none">5 dk okuma süresi</span>
+                              <span className="leading-none">{calculateReadingTime(post.content)} dk okuma süresi</span>
                             </span>
                           </div>
                         </div>

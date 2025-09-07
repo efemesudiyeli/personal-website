@@ -5,6 +5,7 @@ import { ArrowLeft } from 'lucide-react'
 import { PortableText } from '@portabletext/react'
 import { getPost } from '../../lib/sanity'
 import { urlFor } from '../../lib/sanity'
+import { calculateReadingTime } from '../../lib/reading-time'
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
 import StructuredData from '../../components/StructuredData'
@@ -174,7 +175,7 @@ export default async function BlogPostPage({
                     })}
                   </span>
                   <span>·</span>
-                  <span>5 dk okuma</span>
+                  <span>{calculateReadingTime(post.content)} dk okuma</span>
                 </div>
               </div>
             </div>
