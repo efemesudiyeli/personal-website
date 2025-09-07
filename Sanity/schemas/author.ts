@@ -1,4 +1,5 @@
 import { defineType } from 'sanity'
+import { slugify } from '../lib/slugify'
 
 export const author = defineType({
   name: 'author',
@@ -18,6 +19,7 @@ export const author = defineType({
       options: {
         source: 'name',
         maxLength: 96,
+        slugify: (input: string) => slugify(input),
       },
       validation: (Rule) => Rule.required(),
     },
