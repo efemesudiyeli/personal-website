@@ -124,8 +124,8 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
-         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW4203M8E"></Script>
-<Script>{`
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QVW4203M8E"></Script>
+        <Script id="gtag-init">{`
   window.dataLayer = window.dataLayer || [];
   function gtag(){window.dataLayer.push(arguments);} 
   gtag('js', new Date());
