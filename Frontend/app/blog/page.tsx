@@ -7,6 +7,8 @@ import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import type { Metadata } from 'next'
 
+export const revalidate = 60
+
 export const metadata: Metadata = {
   title: 'Blog - iOS Geliştirme Yazıları',
   description: 'iOS geliştirme, Swift, SwiftUI ve mobil teknolojiler hakkında düşüncelerim ve deneyimlerim. En güncel iOS geliştirme ipuçları ve teknik yazılar.',

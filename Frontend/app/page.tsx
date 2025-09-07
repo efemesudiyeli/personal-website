@@ -9,6 +9,8 @@ import { Project, Skill, Profile } from './types'
 import { client } from './lib/sanity'
 import type { Metadata } from 'next'
 
+export const revalidate = 60
+
 async function getProfile(): Promise<Profile | null> {
   try {
     const query = `*[_type == "profile"][0]`
