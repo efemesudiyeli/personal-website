@@ -151,6 +151,13 @@ export default function Hero({ profile }: HeroProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 border border-gray-300 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 hover:border-blue-300 transition-all duration-300 transform hover:scale-105 hover:shadow-lg group"
+                onClick={
+                  () => {
+                    if (typeof window !== 'undefined' && (window as any).gtag) {
+                      (window as any).gtag('event', 'view_resume')
+                    }
+                  }
+                }
                 >
                   <Download size={20} className="group-hover:animate-pulse" />
                   <span>CV Görüntüle</span>
