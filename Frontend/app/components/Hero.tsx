@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react'
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -9,6 +11,7 @@ interface HeroProps {
 }
 
 export default function Hero({ profile }: HeroProps) {
+  const [showCv, setShowCv] = useState(false)
   return (
     <section className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 relative overflow-hidden" style={{ paddingTop: '120px' }}>
 
@@ -145,23 +148,13 @@ export default function Hero({ profile }: HeroProps) {
                     </a>
                   )}
                   {profile.cv && (
-                <a
-                  href={fileUrl(profile.cv)}
-                  download
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                href={"/cv"}
                   className="flex items-center space-x-2 border border-gray-300 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 hover:border-blue-300 transition-all duration-300 transform hover:scale-105 hover:shadow-lg group"
-                onClick={
-                  () => {
-                    if (typeof window !== 'undefined' && (window as any).gtag) {
-                      (window as any).gtag('event', 'view_resume')
-                    }
-                  }
-                }
                 >
                   <Download size={20} className="group-hover:animate-pulse" />
                   <span>CV Görüntüle</span>
-                </a>
+                </Link>
               )}
                 </>
               )}
@@ -169,6 +162,19 @@ export default function Hero({ profile }: HeroProps) {
           </div>
         </div>
       </div>
+      {showCv && profile.cv && (
+        <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4">
+          <div className="bg-white w-full max-w-4xl h-[80vh] rounded-lg overflow-hidden shadow-2xl relative">
+            <button
+              onClick={() => setShowCv(false)}
+              className="absolute top-3 right-3 bg-gray-800 text-white px-3 py-1 rounded hover:bg-gray-700"
+            >
+              Kapat
+            </button>
+            <iframe src={fileUrl(profile.cv)} className="w-full h-full" />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
